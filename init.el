@@ -20,7 +20,10 @@
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode)
 	    auto-mode-alist))
-
+;; lua-mode
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 ;; 鬼軍曹.el
 (require 'drill-instructor)
