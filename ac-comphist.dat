@@ -1,14 +1,14 @@
-((("load-path" .
-   [1 0 0 0 0 0 0 0 0])
-  ("nslookup" .
-   [0 0 1 0 0 0 0 0])
-  ("define-key" .
-   [0 0 0 0 0 0 0 0 0 1])
-  ("return" .
-   [1 0 0 0 0 0])
-  ("drill-instructor-alert-return" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+((("drill-instructor-alert-tab" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("tab" .
    [1 0 0])
-  ("drill-instructor-alert-tab" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("drill-instructor-alert-return" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("return" .
+   [1 0 0 0 0 0])
+  ("define-key" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("nslookup" .
+   [0 0 1 0 0 0 0 0])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])))

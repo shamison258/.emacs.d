@@ -10,12 +10,17 @@
 ;; .#* とかのバックアップファイルを作らない
 (setq auto-save-default nil)
 
-
 ;; auto-complete
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
 (global-auto-complete-mode t)
+
+;; markdown-mode
+(setq auto-mode-alist
+      (cons '("\\.md" . markdown-mode)
+	    auto-mode-alist))
+
 
 ;; 鬼軍曹.el
 (require 'drill-instructor)
