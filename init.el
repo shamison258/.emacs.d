@@ -10,14 +10,26 @@
 ;; .#* とかのバックアップファイルを作らない
 (setq auto-save-default nil)
 
+
 ;; スタートアップをひょうじさせない
 (setq inhibit-startup-message t)
+
+
 
 ;; auto-complete
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
 (global-auto-complete-mode t)
+
+;; markdown-mode
+(setq auto-mode-alist
+      (cons '("\\.md" . markdown-mode)
+	    auto-mode-alist))
+;; lua-mode
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 ;; 鬼軍曹.el
 (require 'drill-instructor)
