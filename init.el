@@ -49,8 +49,8 @@
 (prefer-coding-system 'utf-8)
 
 ;; molokai
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'molokai t)
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;;(load-theme 'molokai t)
 
 ;; Font
 (set-face-attribute 'default nil
