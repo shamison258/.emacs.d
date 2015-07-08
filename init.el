@@ -27,6 +27,7 @@
 ;; Font
 (set-face-attribute 'default nil
 		    :family "Ricty")
+(defconst FONT_SIZE 11)
 
 ;; tab幅
 (setq default-tab-width 2)
@@ -43,6 +44,9 @@
 (setq molokai-theme-kit t)
 (load-theme 'molokai t)
 
+;; スタートアップをひょうじさせない
+(setq inhibit-startup-message t)
+
 ;; auto-complete
 (require 'auto-complete)
 (require 'auto-complete-config)
@@ -53,6 +57,7 @@
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode)
 	    auto-mode-alist))
+
 ;; lua-mode
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
