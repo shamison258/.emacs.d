@@ -11,9 +11,6 @@
 ;; .#* とかのバックアップファイルを作らない
 (setq auto-save-default nil)
 
-;; GNU Emacs Bufferを非表示
-(setq inhibit-startup-screen t)
-
 ;; 日本語
 (set-language-environment 'Japanese)
 
@@ -35,9 +32,14 @@
 ;; 行番号表示
 (global-linum-mode t)
 
-;; スクロールバーとツールバー非表示
+;; スクロールバー,ツールバー,メニューバー非表示
 (tool-bar-mode 0)
+(menu-bar-mode 0)
 (set-scroll-bar-mode nil)
+
+;; タイトルバーにファイルのフルパス表示
+(setq frame-title-format
+      (format "%%f - Emacs"))
 
 ;; Theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -46,6 +48,11 @@
 
 ;; スタートアップをひょうじさせない
 (setq inhibit-startup-message t)
+
+;; 警告音を消す
+(setq visible-bell t)
+(setq ring-bell-function 'ignore)
+
 
 ;; auto-complete
 (require 'auto-complete)
@@ -76,3 +83,8 @@
 ;; 鬼軍曹.el
 (require 'drill-instructor)
 (setq drill-instructor-global t)
+
+;; smartparens
+(require 'smartparens-config)
+(smartparens-global-mode t)
+
