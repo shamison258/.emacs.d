@@ -6,15 +6,16 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'load-path "~/.emacs.d/package")
 (add-to-list 'load-path "~/.emacs.d/package/yatex")
+(add-to-list 'load-path "~/.emacs.d/package/hatena-blog")
 (package-initialize)
 
 
 ;; --- エディタの設定 ---
 
-;; *.~ とかのバックアップファイルを作らない
+;; バックアップファイルを作らない
+(setq backup-inhibited t)
 (setq make-backup-files nil)
 (setq delete-auto-save-files t)
-;; .#* とかのバックアップファイルを作らない
 (setq auto-save-default nil)
 
 ;; 日本語
@@ -26,6 +27,8 @@
 (set-terminal-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+;;(setq coding-system-for-read 'utf-8)
+(setq coding-system-for-write 'utf-8)
 
 ;; Font
 (set-face-attribute 'default nil
@@ -39,7 +42,7 @@
 
 ;; 行番号表示
 (global-linum-mode t)
-
+;;;;
 ;; スクロールバー,ツールバー,メニューバー非表示
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -67,26 +70,33 @@
 (global-auto-complete-mode t)
 
 ;; scheme-mode
-;; goshのエンコをutf-8に
-(setq process-coding-system-alist
-     (cons '("gosh" utf-8 . utf-8)
-           process-coding-system-alist))
-;; goshをrun-schemeで使う
-(setq scheme-program-name "gosh -i")
-;; schemeモードとrun-schemeモードにcmuschemeを使用
-(autoload 'scheme-mode "cmuscheme" "Major mode for Scheme." t)
-(autoload 'run-scheme "cmuscheme" "Run an inferior Scheme process." t)
+(add-hook 'scheme-mode-hook
+          '(lambda ()
+             ;; goshのエンコをutf-8に
+             (setq process-coding-system-alist
+                   (cons '("gosh" utf-8 . utf-8)
+                         process-coding-system-alist))
+             ;; goshをrun-schemeで使う
+             (setq scheme-program-name "gosh -i")
+             ;; schemeモードとrun-schemeモードにcmuschemeを使用
+             (autoload 'scheme-mode
+               "cmuscheme" "Major mode for Scheme." t)
+             (autoload 'run-scheme
+               "cmuscheme" "Run an inferior Scheme process." t)
+             (defun scheme-other-window ()
+               "Run scheme on other window"
+               (interactive)
+               (switch-to-buffer-other-window
+                (get-buffer-create "*scheme*"))
+               (run-scheme scheme-program-name))
+             (define-key global-map
+               "\C-cs" 'scheme-other-window)))
 
 
 ;; markdown-mode
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode)
 	    auto-mode-alist))
-
-;; lua-mode
-(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
-(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 ;; Prolog
 (add-to-list 'auto-mode-alist '("\\.prl$" . prolog-mode))
@@ -105,38 +115,37 @@
 ;; twittering-mode-設定
 (setq twittering-timer-interval 60) ; 1分毎に自動更新
 
-;; --- Clojure 
 
 ;; Clojure-mode
-;; (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+(add-hook 'clojure-mode-hook
+          '(lambda ()
+             ;; Ciderの設定
+             'cider-mode
+             ;; mini bufferに関数の引数を表示させる
+             'cider-turn-on-eldoc-mode
+             ;; 'C-x b' した時に *nrepl-connection*
+             ;; と *nrepl-server* のbufferを一覧に表示しない
+             (setq nrepl-hide-special-buffers t)
+             ;; RELPのbuffer名を 'project名:nREPLのport番号' と表示する
+             ;; project名は project.clj で defproject した名前
+             (setq nrepl-buffer-name-show-port t)
+             ;; C-c C-zでcider-replを出す
+             (setq cider-repl-display-in-current-window t)
+             ;; prompt
+             (setq cider-repl-prompt-abbreviated t)
+             ;; history file path
+             (setq cider-repl-history-file "~/.emacs.d/cider-history")
+             (setq cider-repl-use-pretty-printing t)
 
-;; Ciderの設定
-(add-hook 'clojure-mode-hook 'cider-mode)
-;; mini bufferに関数の引数を表示させる
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-;; 'C-x b' した時に *nrepl-connection*
-;; と *nrepl-server* のbufferを一覧に表示しない
-(setq nrepl-hide-special-buffers t)
-;; RELPのbuffer名を 'project名:nREPLのport番号' と表示する
-;; project名は project.clj で defproject した名前
-(setq nrepl-buffer-name-show-port t)
-;; C-c C-zでcider-replを出す
-(setq cider-repl-display-in-current-window t)
-;; prompt
-(setq cider-repl-prompt-abbreviated t)
-;; history file path
-(setq cider-repl-history-file "~/.emacs.d/cider-history")
-(setq cider-repl-use-pretty-printing t)
-
-;; ac-ciderの設定
-(autoload 'ac-cider "ac-cider" nil t)
-(add-hook 'cider-mode-hook 'ac-flyspell-workaround)
-(add-hook 'cider-mode-hook 'ac-cider-setup)
-(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
-(eval-after-load "auto-complete"
-  '(progn
-     (add-to-list 'ac-modes 'cider-mode)
-     (add-to-list 'ac-modes 'cider-repl-mode)))
+             ;; ac-ciderの設定
+             (autoload 'ac-cider "ac-cider" nil t)
+             (add-hook 'cider-mode-hook 'ac-flyspell-workaround)
+             (add-hook 'cider-mode-hook 'ac-cider-setup)
+             (add-hook 'cider-repl-mode-hook 'ac-cider-setup)
+             (eval-after-load "auto-complete"
+               '(progn
+                  (add-to-list 'ac-modes 'cider-mode)
+                  (add-to-list 'ac-modes 'cider-repl-mode)))))
 
 ;; 鬼軍曹.el
 (require 'drill-instructor)
@@ -147,7 +156,6 @@
 (smartparens-global-mode t)
 ;; 対応括弧をハイライト
 (show-paren-mode t)
-
 
 ;; rainbow-delimiters 
 (require 'rainbow-delimiters)
@@ -216,3 +224,5 @@
       (setq molokai-theme-kit t)
       (load-theme 'molokai t)))
 
+;; hatena-blog
+(require 'hatena-blog)
