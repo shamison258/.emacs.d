@@ -500,7 +500,7 @@ Display a list of packages.
 ;;;***
 
 ;;;### (autoloads nil "emacs-drill-instructor/drill-instructor" "emacs-drill-instructor/drill-instructor.el"
-;;;;;;  (22066 15546 559995 386000))
+;;;;;;  (22066 24209 589926 773000))
 ;;; Generated autoloads from emacs-drill-instructor/drill-instructor.el
 
 (autoload 'drill-instructor "emacs-drill-instructor/drill-instructor" "\
@@ -607,7 +607,7 @@ running 'man git-rebase' at the command line) for details.
 ;;;***
 
 ;;;### (autoloads nil "magit/lisp/magit" "magit/lisp/magit.el" (22066
-;;;;;;  18564 896638 147000))
+;;;;;;  24210 366593 434000))
 ;;; Generated autoloads from magit/lisp/magit.el
 
 (autoload 'magit-status "magit/lisp/magit" "\
@@ -1457,7 +1457,7 @@ Show commits in a branch that are not merged in the upstream branch.
 ;;;***
 
 ;;;### (autoloads nil "magit/lisp/magit-remote" "magit/lisp/magit-remote.el"
-;;;;;;  (22066 18564 893304 814000))
+;;;;;;  (22066 24210 349926 768000))
 ;;; Generated autoloads from magit/lisp/magit-remote.el
 
 (autoload 'magit-clone "magit/lisp/magit-remote" "\
@@ -1921,7 +1921,7 @@ Major mode for editing GitHub Flavored Markdown files.
 ;;;***
 
 ;;;### (autoloads nil "molokai-theme/molokai-theme" "molokai-theme/molokai-theme.el"
-;;;;;;  (22066 18584 76637 995000))
+;;;;;;  (22066 24210 129926 770000))
 ;;; Generated autoloads from molokai-theme/molokai-theme.el
 
 (and load-file-name (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
@@ -2293,7 +2293,7 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "smartparens/smartparens-pkg.el" "smartparens/smartparens-python.el"
 ;;;;;;  "smartparens/smartparens-ruby.el" "smartparens/smartparens-scala.el"
 ;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (22066 21075 654054 545000))
+;;;;;;  (22066 24222 881838 857000))
 
 ;;;***
 

@@ -37,7 +37,7 @@
                         (unload-feature feat t))))
                   (require 'el-get))))
  (emacs-drill-instructor status "installed" recipe
-                         (:name emacs-drill-instructor :website "https://github.com/k1LoW/emacs-drill-instructor" :description "DRILL INSTRUCTOR" :type github :pkgname "k1LoW/emacs-drill-instructor"))
+                         (:name emacs-drill-instructor :type git :url "https://github.com/k1LoW/emacs-drill-instructor.git" :after nil))
  (ensime status "installed" recipe
          (:name ensime :features
                 (ensime)
@@ -86,7 +86,7 @@
 (add-to-list 'auto-mode-alist
 '("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode))))
 (molokai-theme status "installed" recipe
-(:name molokai-theme :type git :url "https://github.com/hbin/molokai-theme.git" :after nil))
+(:name molokai-theme :website "https://github.com/hbin/molokai-theme.git" :description "THEME" :type github :pkgname "hbin/molokai-theme"))
 (popup status "installed" recipe
 (:name popup :website "https://github.com/auto-complete/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :submodule nil :depends cl-lib :pkgname "auto-complete/popup-el"))
 (rainbow-delimiters status "installed" recipe
