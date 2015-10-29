@@ -90,6 +90,7 @@
 ;; ensime
 (el-get-bundle! ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+(setq ensime-completion-style 'auto-complete)
 
 ;; markdown-mode
 (el-get-bundle markdown-mode)
