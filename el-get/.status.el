@@ -64,6 +64,10 @@
                    (backup-inhibited t))
               (update-directory-autoloads default-directory)
               nil)))
+(init-loader status "installed" recipe
+(:name init-loader :features
+(init-loader)
+:after nil :website "https://github.com/emacs-jp/init-loader" :description "It enables you to categorize your configurations and separate them into multiple files." :type github :pkgname "emacs-jp/init-loader"))
 (magit status "installed" recipe
 (:name magit :features
 (magit)

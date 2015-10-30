@@ -562,6 +562,22 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 ;;;***
 
+;;;### (autoloads nil "init-loader/init-loader" "init-loader/init-loader.el"
+;;;;;;  (22067 45305 965361 739000))
+;;; Generated autoloads from init-loader/init-loader.el
+
+(autoload 'init-loader-load "init-loader/init-loader" "\
+Load configuration files in INIT-DIR.
+
+\(fn &optional (init-dir init-loader-directory))" nil nil)
+
+(autoload 'init-loader-show-log "init-loader/init-loader" "\
+Show init-loader log buffer.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil "magit/lisp/git-commit" "magit/lisp/git-commit.el"
 ;;;;;;  (22066 18564 889971 480000))
 ;;; Generated autoloads from magit/lisp/git-commit.el
@@ -2276,10 +2292,11 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "ensime/ensime-stacktrace.el" "ensime/ensime-startup.el"
 ;;;;;;  "ensime/ensime-test.el" "ensime/ensime-ui.el" "ensime/ensime-undo.el"
 ;;;;;;  "ensime/ensime-util.el" "ensime/ensime-vars.el" "fuzzy/fuzzy.el"
-;;;;;;  "magit/lisp/magit-autoloads.el" "magit/lisp/magit-core.el"
-;;;;;;  "magit/lisp/magit-git.el" "magit/lisp/magit-mode.el" "magit/lisp/magit-popup.el"
-;;;;;;  "magit/lisp/magit-process.el" "magit/lisp/magit-section.el"
-;;;;;;  "magit/lisp/magit-utils.el" "magit/lisp/with-editor.el" "molokai-theme/molokai-theme-kit.el"
+;;;;;;  "init-loader/test-init-loader.el" "magit/lisp/magit-autoloads.el"
+;;;;;;  "magit/lisp/magit-core.el" "magit/lisp/magit-git.el" "magit/lisp/magit-mode.el"
+;;;;;;  "magit/lisp/magit-popup.el" "magit/lisp/magit-process.el"
+;;;;;;  "magit/lisp/magit-section.el" "magit/lisp/magit-utils.el"
+;;;;;;  "magit/lisp/with-editor.el" "molokai-theme/molokai-theme-kit.el"
 ;;;;;;  "popup/popup.el" "rainbow-delimiters/rainbow-delimiters-test.el"
 ;;;;;;  "s/s.el" "sbt-mode/sbt-mode-buffer.el" "sbt-mode/sbt-mode-comint.el"
 ;;;;;;  "sbt-mode/sbt-mode-pkg.el" "sbt-mode/sbt-mode-project.el"
@@ -2293,7 +2310,7 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "smartparens/smartparens-pkg.el" "smartparens/smartparens-python.el"
 ;;;;;;  "smartparens/smartparens-ruby.el" "smartparens/smartparens-scala.el"
 ;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (22066 24222 881838 857000))
+;;;;;;  (22067 45306 513568 661000))
 
 ;;;***
 
