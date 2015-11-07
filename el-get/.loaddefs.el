@@ -2055,7 +2055,7 @@ When started, runs `scala-mode-hook'.
 ;;;***
 
 ;;;### (autoloads nil "smartparens/smartparens" "smartparens/smartparens.el"
-;;;;;;  (22066 20271 106624 633000))
+;;;;;;  (22078 14218 429996 46000))
 ;;; Generated autoloads from smartparens/smartparens.el
 
 (autoload 'sp-cheat-sheet "smartparens/smartparens" "\
@@ -2308,9 +2308,9 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "smartparens/smartparens-haskell.el" "smartparens/smartparens-html.el"
 ;;;;;;  "smartparens/smartparens-latex.el" "smartparens/smartparens-lua.el"
 ;;;;;;  "smartparens/smartparens-pkg.el" "smartparens/smartparens-python.el"
-;;;;;;  "smartparens/smartparens-ruby.el" "smartparens/smartparens-scala.el"
-;;;;;;  "yasnippet/yasnippet-debug.el" "yasnippet/yasnippet-tests.el")
-;;;;;;  (22067 45306 513568 661000))
+;;;;;;  "smartparens/smartparens-racket.el" "smartparens/smartparens-ruby.el"
+;;;;;;  "smartparens/smartparens-scala.el" "yasnippet/yasnippet-debug.el"
+;;;;;;  "yasnippet/yasnippet-tests.el") (22078 14219 878331 931000))
 
 ;;;***
 

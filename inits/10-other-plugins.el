@@ -4,7 +4,7 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; auto-complete
-(el-get-bundle! auto-complete)
+(el-get-bundle auto-complete)
 (ac-config-default)
 (global-auto-complete-mode t)
 
@@ -20,9 +20,9 @@
 (setq drill-instructor-global t)
 
 ;; magit
-(el-get-bundle! magit)
+(el-get-bundle magit)
 
 ;; smartparens
-(el-get-bundle! smartparens)
+(el-get-bundle smartparens)
 (require 'smartparens-config)
 (smartparens-global-mode t)

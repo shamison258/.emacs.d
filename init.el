@@ -6,15 +6,15 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 ;; if dont install, do this
 (unless (require 'el-get nil 'noerror)
-  (require 'package)
-  (add-to-list 'package-archives
-	       '("melpa" . "http://melpa.org/packages/"))
-  (package-refresh-contents)
-  (package-initialize)
-  (package-install 'el-get)
-  (require 'el-get))
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+
 ;; set path and sync
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get/el-get/recipes")
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
 
 (el-get-bundle! init-loader)

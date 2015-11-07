@@ -1,10 +1,10 @@
 ;; scala-mode2
-(el-get-bundle! scala-mode2)
+(el-get-bundle scala-mode2)
 ;; scaladoc-style を採用
 (setq scala-indent:use-scaladoc-style t)
 
 ;; ensime
-(el-get-bundle! ensime)
+(el-get-bundle ensime)
 
 (setq ensime-completion-style 'auto-complete)
 

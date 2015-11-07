@@ -1,7 +1,7 @@
 ((auto-complete status "installed" recipe
-                (:name auto-complete :features
-                       (auto-complete-config auto-complete)
-                       :after nil :website "https://github.com/auto-complete/auto-complete" :description "The most intelligent auto-completion extension." :type github :pkgname "auto-complete/auto-complete" :depends
+                (:name auto-complete :after nil :features
+                       (auto-complete-config)
+                       :website "https://github.com/auto-complete/auto-complete" :description "The most intelligent auto-completion extension." :type github :pkgname "auto-complete/auto-complete" :depends
                        (popup fuzzy)
                        :post-init
                        (progn
@@ -39,9 +39,7 @@
  (emacs-drill-instructor status "installed" recipe
                          (:name emacs-drill-instructor :type git :url "https://github.com/k1LoW/emacs-drill-instructor.git" :after nil))
  (ensime status "installed" recipe
-         (:name ensime :features
-                (ensime)
-                :after nil :description "ENhanced Scala Interaction Mode for Emacs" :type github :pkgname "ensime/ensime-emacs" :depends
+         (:name ensime :description "ENhanced Scala Interaction Mode for Emacs" :type github :pkgname "ensime/ensime-emacs" :depends
                 (s dash popup auto-complete scala-mode2 sbt-mode company-mode yasnippet)
                 :prepare
                 (progn
@@ -50,9 +48,7 @@
  (fuzzy status "installed" recipe
         (:name fuzzy :website "https://github.com/auto-complete/fuzzy-el" :description "Fuzzy matching utilities for GNU Emacs" :type github :pkgname "auto-complete/fuzzy-el"))
  (helm status "installed" recipe
-       (:name helm :features
-              (helm)
-              :after nil :description "Emacs incremental and narrowing framework" :type github :pkgname "emacs-helm/helm" :autoloads "helm-autoloads" :build
+       (:name helm :description "Emacs incremental and narrowing framework" :type github :pkgname "emacs-helm/helm" :autoloads "helm-autoloads" :build
               (("make"))
               :build/darwin
               `(("make" ,(format "EMACS_COMMAND=%s" el-get-emacs)))
@@ -69,9 +65,7 @@
 (init-loader)
 :after nil :website "https://github.com/emacs-jp/init-loader" :description "It enables you to categorize your configurations and separate them into multiple files." :type github :pkgname "emacs-jp/init-loader"))
 (magit status "installed" recipe
-(:name magit :features
-(magit)
-:after nil :website "https://github.com/magit/magit#readme" :description "It's Magit! An Emacs mode for Git." :type github :pkgname "magit/magit" :branch "master" :minimum-emacs-version "24.4" :depends
+(:name magit :website "https://github.com/magit/magit#readme" :description "It's Magit! An Emacs mode for Git." :type github :pkgname "magit/magit" :branch "master" :minimum-emacs-version "24.4" :depends
 (dash)
 :provide
 (with-editor)
@@ -102,13 +96,9 @@
 (sbt-mode status "installed" recipe
 (:name sbt-mode :description "An emacs mode for interacting with scala sbt and projects" :type github :pkgname "hvesalai/sbt-mode"))
 (scala-mode2 status "installed" recipe
-(:name scala-mode2 :features
-(scala-mode2)
-:after nil :description "A new scala-mode for Emacs 24." :type github :pkgname "hvesalai/scala-mode2"))
+(:name scala-mode2 :description "A new scala-mode for Emacs 24." :type github :pkgname "hvesalai/scala-mode2"))
 (smartparens status "installed" recipe
-(:name smartparens :features
-(smartparens)
-:after nil :description "Autoinsert pairs of defined brackets and wrap regions" :type github :pkgname "Fuco1/smartparens" :depends dash))
+(:name smartparens :after nil :description "Autoinsert pairs of defined brackets and wrap regions" :type github :pkgname "Fuco1/smartparens" :depends dash))
 (yasnippet status "installed" recipe
 (:name yasnippet :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :compile "yasnippet.el" :submodule nil :build
 (("git" "submodule" "update" "--init" "--" "snippets")))))

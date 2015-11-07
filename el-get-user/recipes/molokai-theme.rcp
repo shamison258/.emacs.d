@@ -1,0 +1,5 @@
+(:name molokai-theme
+       :website "https://github.com/hbin/molokai-theme.git"
+       :description "THEME"
+       :type github
+       :pkgname "hbin/molokai-theme")
