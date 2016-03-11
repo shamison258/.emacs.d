@@ -6,7 +6,6 @@
 ;; ensime
 (el-get-bundle ensime)
 
-(setq ensime-completion-style 'auto-complete)
 
 ;; http://blog.shibayu36.org/entry/2015/07/07/103000
 

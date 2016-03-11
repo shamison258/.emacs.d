@@ -60,70 +60,44 @@
                         (require 'haskell-mode-autoloads)
                         (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
                         (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation))))
- (helm status "installed" recipe
-       (:name helm :after nil :description "Emacs incremental and narrowing framework" :type github :pkgname "emacs-helm/helm" :autoloads "helm-autoloads" :build
-              (("make"))
-              :build/darwin
-              `(("make" ,(format "EMACS_COMMAND=%s" el-get-emacs)))
-              :build/windows-nt
-              (let
-                  ((generated-autoload-file
-                    (expand-file-name "helm-autoloads.el"))
-                   \
-                   (backup-inhibited t))
-              (update-directory-autoloads default-directory)
-              nil)))
-(init-loader status "installed" recipe
-(:name init-loader :features
-(init-loader)
-:after nil :website "https://github.com/emacs-jp/init-loader" :description "It enables you to categorize your configurations and separate them into multiple files." :type github :pkgname "emacs-jp/init-loader"))
-(js2-mode status "installed" recipe
-(:name js2-mode :after nil :website "https://github.com/mooz/js2-mode#readme" :description "An improved JavaScript editing mode" :type github :pkgname "mooz/js2-mode" :prepare
-(autoload 'js2-mode "js2-mode" nil t)))
-(magit status "installed" recipe
-(:name magit :after nil :website "https://github.com/magit/magit#readme" :description "It's Magit! An Emacs mode for Git." :type github :pkgname "magit/magit" :branch "master" :minimum-emacs-version "24.4" :depends
-(dash)
-:provide
-(with-editor)
-:info "Documentation" :load-path "lisp/" :compile "lisp/" :build
-`(("make" ,(format "EMACSBIN=%s" el-get-emacs)
-"docs")
-("touch" "lisp/magit-autoloads.el"))
-:build/berkeley-unix
-`(("gmake" ,(format "EMACSBIN=%s" el-get-emacs)
-"docs")
-("touch" "lisp/magit-autoloads.el"))
-:build/windows-nt
-(with-temp-file "lisp/magit-autoloads.el" nil)))
-(markdown-mode status "installed" recipe
-(:name markdown-mode :after nil :description "Major mode to edit Markdown files in Emacs" :website "http://jblevins.org/projects/markdown-mode/" :type git :url "git://jblevins.org/git/markdown-mode.git" :prepare
-(add-to-list 'auto-mode-alist
-'("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode))))
-(molokai-theme status "installed" recipe
-(:name molokai-theme :type git :url "https://github.com/hbin/molokai-theme.git" :after nil))
-(popup status "installed" recipe
-(:name popup :website "https://github.com/auto-complete/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :submodule nil :depends cl-lib :pkgname "auto-complete/popup-el"))
-(rainbow-delimiters status "installed" recipe
-(:name rainbow-delimiters :features
-(rainbow-delimiters)
-:after nil :website "https://github.com/Fanael/rainbow-delimiters#readme" :description "Color nested parentheses, brackets, and braces according to their depth." :type github :pkgname "Fanael/rainbow-delimiters"))
-(s status "installed" recipe
-(:name s :description "The long lost Emacs string manipulation library." :type github :pkgname "magnars/s.el"))
-(sbt-mode status "installed" recipe
-(:name sbt-mode :description "An emacs mode for interacting with scala sbt and projects" :type github :pkgname "hvesalai/sbt-mode"))
-(scala-mode2 status "installed" recipe
-(:name scala-mode2 :after nil :description "A new scala-mode for Emacs 24." :type github :pkgname "hvesalai/scala-mode2"))
-(smartparens status "installed" recipe
-(:name smartparens :after nil :description "Autoinsert pairs of defined brackets and wrap regions" :type github :pkgname "Fuco1/smartparens" :depends dash))
-(yasnippet status "installed" recipe
-(:name yasnippet :features
-(yasnippet)
-:after nil :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :compile "yasnippet.el" :submodule nil :build
-(("git" "submodule" "update" "--init" "--" "snippets"))))
-(yatex status "installed" recipe
-(:name yatex :after nil :website "http://www.yatex.org/" :description "Yet Another TeX mode for Emacs" :type hg :url "http://www.yatex.org/hgrepos/yatex" :build
-(("sed" "-i" "s/ from yatex.el//" "yatexmth.el"))
-:build/berkeley-unix
-(("sed" "-i" "" "s/ from yatex.el//" "yatexmth.el"))
-:build/darwin
-(("env" "LANG=C" "LC_ALL=C" "sed" "-i" "" "s/ from yatex.el//" "yatexmth.el")))))
+ (init-loader status "installed" recipe
+              (:name init-loader :features
+                     (init-loader)
+                     :after nil :website "https://github.com/emacs-jp/init-loader" :description "It enables you to categorize your configurations and separate them into multiple files." :type github :pkgname "emacs-jp/init-loader"))
+ (js2-mode status "installed" recipe
+           (:name js2-mode :after nil :website "https://github.com/mooz/js2-mode#readme" :description "An improved JavaScript editing mode" :type github :pkgname "mooz/js2-mode" :prepare
+                  (autoload 'js2-mode "js2-mode" nil t)))
+ (markdown-mode status "installed" recipe
+                (:name markdown-mode :after nil :description "Major mode to edit Markdown files in Emacs" :website "http://jblevins.org/projects/markdown-mode/" :type git :url "git://jblevins.org/git/markdown-mode.git" :prepare
+                       (add-to-list 'auto-mode-alist
+                                    '("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode))))
+ (molokai-theme status "installed" recipe
+                (:name molokai-theme :type git :url "https://github.com/hbin/molokai-theme.git" :after nil))
+ (popup status "installed" recipe
+        (:name popup :website "https://github.com/auto-complete/popup-el" :description "Visual Popup Interface Library for Emacs" :type github :submodule nil :depends cl-lib :pkgname "auto-complete/popup-el"))
+ (rainbow-delimiters status "installed" recipe
+                     (:name rainbow-delimiters :features
+                            (rainbow-delimiters)
+                            :after nil :website "https://github.com/Fanael/rainbow-delimiters#readme" :description "Color nested parentheses, brackets, and braces according to their depth." :type github :pkgname "Fanael/rainbow-delimiters"))
+ (s status "installed" recipe
+    (:name s :description "The long lost Emacs string manipulation library." :type github :pkgname "magnars/s.el"))
+ (sbt-mode status "installed" recipe
+           (:name sbt-mode :description "An emacs mode for interacting with scala sbt and projects" :type github :pkgname "hvesalai/sbt-mode"))
+ (scala-mode2 status "installed" recipe
+              (:name scala-mode2 :after nil :description "A new scala-mode for Emacs 24." :type github :pkgname "hvesalai/scala-mode2"))
+ (smartparens status "installed" recipe
+              (:name smartparens :after nil :description "Autoinsert pairs of defined brackets and wrap regions" :type github :pkgname "Fuco1/smartparens" :depends dash))
+ (web-mode status "installed" recipe
+           (:name web-mode :after nil :description "emacs major mode for editing PHP/JSP/ASP HTML templates (with embedded CSS and JS blocks)" :type github :pkgname "fxbois/web-mode"))
+ (yasnippet status "installed" recipe
+            (:name yasnippet :features
+                   (yasnippet)
+                   :after nil :website "https://github.com/capitaomorte/yasnippet.git" :description "YASnippet is a template system for Emacs." :type github :pkgname "capitaomorte/yasnippet" :compile "yasnippet.el" :submodule nil :build
+                   (("git" "submodule" "update" "--init" "--" "snippets"))))
+ (yatex status "installed" recipe
+        (:name yatex :after nil :website "http://www.yatex.org/" :description "Yet Another TeX mode for Emacs" :type hg :url "http://www.yatex.org/hgrepos/yatex" :build
+               (("sed" "-i" "s/ from yatex.el//" "yatexmth.el"))
+               :build/berkeley-unix
+               (("sed" "-i" "" "s/ from yatex.el//" "yatexmth.el"))
+               :build/darwin
+               (("env" "LANG=C" "LC_ALL=C" "sed" "-i" "" "s/ from yatex.el//" "yatexmth.el")))))
