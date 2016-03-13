@@ -39,3 +39,14 @@
 (setq ring-bell-function 'ignore)
 ;; 対応括弧をハイライト
 (show-paren-mode t)
+;; C-hをBackspaceに
+(define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
+
+;; 検索(全般)時には大文字小文字の区別をしない
+(setq case-fold-search t) 
+;; インクリメンタルサーチ時には大文字小文字の区別をしない
+(setq isearch-case-fold-search t)
+;; バッファー名の問い合わせで大文字小文字の区別をしない
+(setq read-buffer-completion-ignore-case t)
+;; ファイル名の問い合わせで大文字小文字の区別をしない
+(setq read-file-name-completion-ignore-case t)

@@ -1,5 +1,0 @@
-(:name emacs-drill-instructor
-       :website "https://github.com/k1LoW/emacs-drill-instructor"
-       :description "DRILL INSTRUCTOR"
-       :type github
-       :pkgname "k1LoW/emacs-drill-instructor")
