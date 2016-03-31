@@ -34,9 +34,9 @@
         (t
          (insert ".")
          (company-complete))))
-(defun scala/completing-dot-ac ()
-  (insert ".")
-  (ac-trigger-key-command t))
+;(defun scala/completing-dot-ac ()
+;  (insert ".")
+;  (ac-trigger-key-command t))
 ;; Interactive commands
 (defun scala/completing-dot ()
   "Insert a period and show company completions."
@@ -78,3 +78,15 @@
       (run-scheme scheme-program-name))
     (define-key global-map
       "\C-cs" 'scheme-other-window)))
+
+;; web-mode
+(el-get-bundle! web-mode)
+(add-to-list 'auto-mode-alist '("\\.scala\\.html$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+(defun web-mode-hook ()
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+(add-hook 'web-mode-hook  'web-mode-hook)

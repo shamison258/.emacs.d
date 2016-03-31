@@ -55,9 +55,3 @@
 (require 'smartparens-config)
 (smartparens-global-mode t)
 
-(el-get-bundle web-mode)
-(add-to-list 'auto-mode-alist '("\\.scala\\.html$" . web-mode))
-
-(setq web-mode-markup-indent-offset 2)
-(add-hook 'web-mode-hook 'web-mode-hook)
-
