@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads nil "auto-complete/auto-complete" "auto-complete/auto-complete.el"
-;;;;;;  (22245 60549 326907 180000))
+;;;;;;  (22269 10978 0 0))
 ;;; Generated autoloads from auto-complete/auto-complete.el
 
 (autoload 'auto-complete "auto-complete/auto-complete" "\
@@ -41,7 +41,7 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 ;;;***
 
 ;;;### (autoloads nil "auto-complete/auto-complete-config" "auto-complete/auto-complete-config.el"
-;;;;;;  (22245 60549 323573 847000))
+;;;;;;  (22269 10978 0 0))
 ;;; Generated autoloads from auto-complete/auto-complete-config.el
 
 (autoload 'ac-config-default "auto-complete/auto-complete-config" "\
@@ -52,7 +52,7 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company" "company-mode/company.el"
-;;;;;;  (22245 60553 950240 685000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company.el
 
 (autoload 'company-mode "company-mode/company" "\
@@ -109,7 +109,7 @@ See `company-mode' for more information on Company mode.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-abbrev" "company-mode/company-abbrev.el"
-;;;;;;  (22245 60553 943574 18000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-abbrev.el
 
 (autoload 'company-abbrev "company-mode/company-abbrev" "\
@@ -120,7 +120,7 @@ See `company-mode' for more information on Company mode.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-bbdb" "company-mode/company-bbdb.el"
-;;;;;;  (22245 60553 943574 18000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-bbdb.el
 
 (autoload 'company-bbdb "company-mode/company-bbdb" "\
@@ -131,7 +131,7 @@ See `company-mode' for more information on Company mode.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-css" "company-mode/company-css.el"
-;;;;;;  (22245 60553 943574 18000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-css.el
 
 (autoload 'company-css "company-mode/company-css" "\
@@ -142,7 +142,7 @@ See `company-mode' for more information on Company mode.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-dabbrev" "company-mode/company-dabbrev.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-dabbrev.el
 
 (autoload 'company-dabbrev "company-mode/company-dabbrev" "\
@@ -153,7 +153,7 @@ dabbrev-like `company-mode' completion backend.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-dabbrev-code" "company-mode/company-dabbrev-code.el"
-;;;;;;  (22245 60553 943574 18000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-dabbrev-code.el
 
 (autoload 'company-dabbrev-code "company-mode/company-dabbrev-code" "\
@@ -166,7 +166,7 @@ comments or strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-elisp" "company-mode/company-elisp.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-elisp.el
 
 (autoload 'company-elisp "company-mode/company-elisp" "\
@@ -177,7 +177,7 @@ comments or strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-etags" "company-mode/company-etags.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-etags.el
 
 (autoload 'company-etags "company-mode/company-etags" "\
@@ -188,7 +188,7 @@ comments or strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-files" "company-mode/company-files.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-files.el
 
 (autoload 'company-files "company-mode/company-files" "\
@@ -201,7 +201,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-gtags" "company-mode/company-gtags.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-gtags.el
 
 (autoload 'company-gtags "company-mode/company-gtags" "\
@@ -212,7 +212,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-ispell" "company-mode/company-ispell.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-ispell.el
 
 (autoload 'company-ispell "company-mode/company-ispell" "\
@@ -223,7 +223,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-keywords" "company-mode/company-keywords.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-keywords.el
 
 (autoload 'company-keywords "company-mode/company-keywords" "\
@@ -234,7 +234,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-nxml" "company-mode/company-nxml.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-nxml.el
 
 (autoload 'company-nxml "company-mode/company-nxml" "\
@@ -245,7 +245,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-oddmuse" "company-mode/company-oddmuse.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-oddmuse.el
 
 (autoload 'company-oddmuse "company-mode/company-oddmuse" "\
@@ -256,7 +256,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-semantic" "company-mode/company-semantic.el"
-;;;;;;  (22245 60553 946907 352000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-semantic.el
 
 (autoload 'company-semantic "company-mode/company-semantic" "\
@@ -267,7 +267,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-tempo" "company-mode/company-tempo.el"
-;;;;;;  (22245 60553 950240 685000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-tempo.el
 
 (autoload 'company-tempo "company-mode/company-tempo" "\
@@ -278,7 +278,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-xcode" "company-mode/company-xcode.el"
-;;;;;;  (22245 60553 950240 685000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-xcode.el
 
 (autoload 'company-xcode "company-mode/company-xcode" "\
@@ -289,7 +289,7 @@ File paths with spaces are only supported inside strings.
 ;;;***
 
 ;;;### (autoloads nil "company-mode/company-yasnippet" "company-mode/company-yasnippet.el"
-;;;;;;  (22245 60553 950240 685000))
+;;;;;;  (22269 10956 0 0))
 ;;; Generated autoloads from company-mode/company-yasnippet.el
 
 (autoload 'company-yasnippet "company-mode/company-yasnippet" "\
@@ -319,8 +319,8 @@ shadow backends that come after it.  Recommended usages:
 
 ;;;***
 
-;;;### (autoloads nil "d-mode/d-mode" "d-mode/d-mode.el" (22245 60556
-;;;;;;  996907 465000))
+;;;### (autoloads nil "d-mode/d-mode" "d-mode/d-mode.el" (22269 10927
+;;;;;;  0 0))
 ;;; Generated autoloads from d-mode/d-mode.el
  (add-to-list 'auto-mode-alist '("\\.d[i]?\\'" . d-mode))
 
@@ -337,8 +337,8 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (22245 60437
-;;;;;;  590236 377000))
+;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (22269 10915
+;;;;;;  0 0))
 ;;; Generated autoloads from el-get/el-get.el
 
 (autoload 'el-get-version "el-get/el-get" "\
@@ -438,7 +438,7 @@ already installed packages is considered.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-bundle" "el-get/el-get-bundle.el"
-;;;;;;  (22245 60437 586903 44000))
+;;;;;;  (22269 10915 0 0))
 ;;; Generated autoloads from el-get/el-get-bundle.el
 
 (autoload 'el-get-bundle-el-get "el-get/el-get-bundle" "\
@@ -488,7 +488,7 @@ required.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-check" "el-get/el-get-check.el"
-;;;;;;  (22245 60437 586903 44000))
+;;;;;;  (22269 10915 0 0))
 ;;; Generated autoloads from el-get/el-get-check.el
 
 (autoload 'el-get-check-recipe "el-get/el-get-check" "\
@@ -507,7 +507,7 @@ object or a file path.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-list-packages" "el-get/el-get-list-packages.el"
-;;;;;;  (22245 60437 590236 377000))
+;;;;;;  (22269 10915 0 0))
 ;;; Generated autoloads from el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
@@ -517,8 +517,8 @@ Display a list of packages.
 
 ;;;***
 
-;;;### (autoloads nil "ensime/ensime" "ensime/ensime.el" (22245 60593
-;;;;;;  246908 806000))
+;;;### (autoloads nil "ensime/ensime" "ensime/ensime.el" (22269 10983
+;;;;;;  0 0))
 ;;; Generated autoloads from ensime/ensime.el
 
 (autoload 'ensime "ensime/ensime" "\
@@ -534,7 +534,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;***
 
 ;;;### (autoloads nil "init-loader/init-loader" "init-loader/init-loader.el"
-;;;;;;  (22245 60597 423575 628000))
+;;;;;;  (22269 10925 0 0))
 ;;; Generated autoloads from init-loader/init-loader.el
 
 (autoload 'init-loader-load "init-loader/init-loader" "\
@@ -550,7 +550,7 @@ Show init-loader log buffer.
 ;;;***
 
 ;;;### (autoloads nil "js2-mode/js2-imenu-extras" "js2-mode/js2-imenu-extras.el"
-;;;;;;  (22245 60602 440242 480000))
+;;;;;;  (22269 10932 0 0))
 ;;; Generated autoloads from js2-mode/js2-imenu-extras.el
 
 (autoload 'js2-imenu-extras-setup "js2-mode/js2-imenu-extras" "\
@@ -566,7 +566,7 @@ Toggle Imenu support for frameworks and structural patterns.
 ;;;***
 
 ;;;### (autoloads nil "js2-mode/js2-mode" "js2-mode/js2-mode.el"
-;;;;;;  (22245 60602 446909 147000))
+;;;;;;  (22269 10932 0 0))
 ;;; Generated autoloads from js2-mode/js2-mode.el
 
 (autoload 'js2-highlight-unused-variables-mode "js2-mode/js2-mode" "\
@@ -602,7 +602,7 @@ variables (`sgml-basic-offset' et al) locally, like so:
 ;;;***
 
 ;;;### (autoloads nil "markdown-mode/markdown-mode" "markdown-mode/markdown-mode.el"
-;;;;;;  (22245 60610 650242 784000))
+;;;;;;  (22269 10999 0 0))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode/markdown-mode" "\
@@ -610,11 +610,9 @@ Major mode for editing Markdown files.
 
 \(fn)" t nil)
 
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode) t)
 
-(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
-
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode) t)
 
 (autoload 'gfm-mode "markdown-mode/markdown-mode" "\
 Major mode for editing GitHub Flavored Markdown files.
@@ -624,7 +622,7 @@ Major mode for editing GitHub Flavored Markdown files.
 ;;;***
 
 ;;;### (autoloads nil "molokai-theme/molokai-theme" "molokai-theme/molokai-theme.el"
-;;;;;;  (22245 60745 793581 121000))
+;;;;;;  (22269 11002 0 0))
 ;;; Generated autoloads from molokai-theme/molokai-theme.el
 
 (and load-file-name (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
@@ -632,7 +630,7 @@ Major mode for editing GitHub Flavored Markdown files.
 ;;;***
 
 ;;;### (autoloads nil "rainbow-delimiters/rainbow-delimiters" "rainbow-delimiters/rainbow-delimiters.el"
-;;;;;;  (22245 60613 823576 235000))
+;;;;;;  (22269 10995 0 0))
 ;;; Generated autoloads from rainbow-delimiters/rainbow-delimiters.el
 
 (autoload 'rainbow-delimiters-mode "rainbow-delimiters/rainbow-delimiters" "\
@@ -653,7 +651,7 @@ Disable `rainbow-delimiters-mode'.
 ;;;***
 
 ;;;### (autoloads nil "sbt-mode/sbt-mode" "sbt-mode/sbt-mode.el"
-;;;;;;  (22245 60578 676908 267000))
+;;;;;;  (22269 10959 0 0))
 ;;; Generated autoloads from sbt-mode/sbt-mode.el
 
 (autoload 'sbt-start "sbt-mode/sbt-mode" "\
@@ -692,7 +690,7 @@ sbt:default-command, if no other command has yet been run).
 ;;;***
 
 ;;;### (autoloads nil "sbt-mode/sbt-mode-rgrep" "sbt-mode/sbt-mode-rgrep.el"
-;;;;;;  (22245 60578 676908 267000))
+;;;;;;  (22269 10959 0 0))
 ;;; Generated autoloads from sbt-mode/sbt-mode-rgrep.el
 
 (autoload 'sbt-grep "sbt-mode/sbt-mode-rgrep" "\
@@ -713,7 +711,7 @@ Recursively grep for definition of ID in scala files in the directory tree roote
 ;;;***
 
 ;;;### (autoloads nil "scala-mode2/scala-mode2" "scala-mode2/scala-mode2.el"
-;;;;;;  (22245 60576 346908 180000))
+;;;;;;  (22269 10939 0 0))
 ;;; Generated autoloads from scala-mode2/scala-mode2.el
 
 (autoload 'scala-mode:set-scala-syntax-mode "scala-mode2/scala-mode2" "\
@@ -741,183 +739,88 @@ When started, runs `scala-mode-hook'.
 
 ;;;***
 
-;;;### (autoloads nil "smartparens/smartparens" "smartparens/smartparens.el"
-;;;;;;  (22245 60566 933574 499000))
-;;; Generated autoloads from smartparens/smartparens.el
+;;;### (autoloads nil "tuareg-mode/ocamldebug" "tuareg-mode/ocamldebug.el"
+;;;;;;  (22295 19751 0 0))
+;;; Generated autoloads from tuareg-mode/ocamldebug.el
 
-(autoload 'sp-cheat-sheet "smartparens/smartparens" "\
-Generate a cheat sheet of all the smartparens interactive functions.
+(autoload 'ocamldebug "tuareg-mode/ocamldebug" "\
+Run ocamldebug on program FILE in buffer *ocamldebug-FILE*.
+The directory containing FILE becomes the initial working directory
+and source-file directory for ocamldebug.  If you wish to change this, use
+the ocamldebug commands `cd DIR' and `directory'.
 
-Without a prefix argument, print only the short documentation and examples.
+\(fn PATH)" t nil)
 
-With non-nil prefix argument, show the full documentation for each function.
+(defalias 'camldebug 'ocamldebug)
 
-You can follow the links to the function or variable help page.
-To get back to the full list, use \\[help-go-back].
+;;;***
+
+;;;### (autoloads nil "tuareg-mode/tuareg" "tuareg-mode/tuareg.el"
+;;;;;;  (22295 19751 0 0))
+;;; Generated autoloads from tuareg-mode/tuareg.el
+(add-to-list 'auto-mode-alist '("\\.ml[ip]?\\'" . tuareg-mode))
+(add-to-list 'auto-mode-alist '("\\.eliomi?\\'" . tuareg-mode))
+(dolist (ext '(".cmo" ".cmx" ".cma" ".cmxa" ".cmi"
+               ".annot" ".cmt" ".cmti"))
+ (add-to-list 'completion-ignored-extensions ext))
 
-You can use `beginning-of-defun' and `end-of-defun' to jump to
-the previous/next entry.
+(autoload 'tuareg-mode "tuareg-mode/tuareg" "\
+Major mode for editing OCaml code.
 
-Examples are fontified using the `font-lock-string-face' for
-better orientation.
+Dedicated to Emacs and XEmacs, version 21 and higher.  Provides
+automatic indentation and compilation interface.  Performs font/color
+highlighting using Font-Lock.  It is designed for OCaml but handles
+Caml Light as well.
 
-\(fn &optional ARG)" t nil)
+The Font-Lock minor-mode is used according to your customization
+options.
 
-(defvar smartparens-mode-map (make-sparse-keymap) "\
-Keymap used for `smartparens-mode'.")
+You have better byte-compile tuareg.el.
 
-(autoload 'sp-use-paredit-bindings "smartparens/smartparens" "\
-Initiate `smartparens-mode-map' with paredit-compatible bindings for
-corresponding functions provided by smartparens.  See variable
-`sp-paredit-bindings'.
+For customization purposes, you should use `tuareg-mode-hook'
+\(run for every file) or `tuareg-load-hook' (run once) and not patch
+the mode itself.  You should add to your configuration file something like:
+  (add-hook 'tuareg-mode-hook
+            (lambda ()
+               ... ; your customization code
+            ))
+For example you can change the indentation of some keywords, the
+`electric' flags, Font-Lock colors... Every customizable variable is
+documented, use `C-h-v' or look at the mode's source code.
 
-\(fn)" t nil)
+`dot-emacs.el' is a sample customization file for standard changes.
+You can append it to your `.emacs' or use it as a tutorial.
 
-(autoload 'sp-use-smartparens-bindings "smartparens/smartparens" "\
-Initiate `smartparens-mode-map' with smartparens bindings for navigation functions.
-See variable `sp-smartparens-bindings'.
+`M-x ocamldebug' FILE starts the OCaml debugger ocamldebug on the executable
+FILE, with input and output in an Emacs buffer named *ocamldebug-FILE*.
 
-\(fn)" t nil)
+A Tuareg Interactive Mode to evaluate expressions in a toplevel is
+included.  Type `M-x tuareg-run-ocaml' or simply `M-x run-ocaml' or see
+special-keys below.
 
-(autoload 'smartparens-mode "smartparens/smartparens" "\
-Toggle smartparens mode.
+Short cuts for the Tuareg mode:
+\\{tuareg-mode-map}
 
-You can enable pre-set bindings by customizing
-`sp-base-key-bindings' variable.  The current content of
-`smartparens-mode-map' is:
-
- \\{smartparens-mode-map}
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'smartparens-strict-mode "smartparens/smartparens" "\
-Toggle the strict smartparens mode.
-
-When strict mode is active, `delete-char', `kill-word' and their
-backward variants will skip over the pair delimiters in order to
-keep the structure always valid (the same way as `paredit-mode'
-does).  This is accomplished by remapping them to
-`sp-delete-char' and `sp-kill-word'.  There is also function
-`sp-kill-symbol' that deletes symbols instead of words, otherwise
-working exactly the same (it is not bound to any key by default).
-
-When strict mode is active, this is indicated with \"/s\"
-after the smartparens indicator in the mode list.
-
-\(fn &optional ARG)" t nil)
-
-(defvar smartparens-global-strict-mode nil "\
-Non-nil if Smartparens-Global-Strict mode is enabled.
-See the command `smartparens-global-strict-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `smartparens-global-strict-mode'.")
-
-(custom-autoload 'smartparens-global-strict-mode "smartparens/smartparens" nil)
-
-(autoload 'smartparens-global-strict-mode "smartparens/smartparens" "\
-Toggle Smartparens-Strict mode in all buffers.
-With prefix ARG, enable Smartparens-Global-Strict mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Smartparens-Strict mode is enabled in all buffers where
-`turn-on-smartparens-strict-mode' would do it.
-See `smartparens-strict-mode' for more information on Smartparens-Strict mode.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-smartparens-strict-mode "smartparens/smartparens" "\
-Turn on `smartparens-strict-mode'.
+Short cuts for interactions with the toplevel:
+\\{tuareg-interactive-mode-map}
 
 \(fn)" t nil)
 
-(defvar smartparens-global-mode nil "\
-Non-nil if Smartparens-Global mode is enabled.
-See the command `smartparens-global-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `smartparens-global-mode'.")
-
-(custom-autoload 'smartparens-global-mode "smartparens/smartparens" nil)
-
-(autoload 'smartparens-global-mode "smartparens/smartparens" "\
-Toggle Smartparens mode in all buffers.
-With prefix ARG, enable Smartparens-Global mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Smartparens mode is enabled in all buffers where
-`turn-on-smartparens-mode' would do it.
-See `smartparens-mode' for more information on Smartparens mode.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-smartparens-mode "smartparens/smartparens" "\
-Turn on `smartparens-mode'.
-
-This function is used to turn on `smartparens-global-mode'.
-
-By default `smartparens-global-mode' ignores buffers with
-`mode-class' set to special, but only if they are also not comint
-buffers.
-
-Additionally, buffers on `sp-ignore-modes-list' are ignored.
-
-You can still turn on smartparens in these mode manually (or
-in mode's startup-hook etc.) by calling `smartparens-mode'.
+(autoload 'tuareg-run-ocaml "tuareg-mode/tuareg" "\
+Run an OCaml toplevel process.  I/O via buffer `*ocaml-toplevel*'.
 
 \(fn)" t nil)
 
-(autoload 'turn-off-smartparens-mode "smartparens/smartparens" "\
-Turn off `smartparens-mode'.
+(defalias 'run-ocaml 'tuareg-run-ocaml)
 
-\(fn)" t nil)
+(add-to-list 'interpreter-mode-alist '("ocamlrun" . tuareg-mode))
 
-(autoload 'show-smartparens-mode "smartparens/smartparens" "\
-Toggle visualization of matching pairs.  When enabled, any
-matching pair is highlighted after `sp-show-pair-delay' seconds
-of Emacs idle time if the point is immediately in front or after
-a pair.  This mode works similarly to `show-paren-mode', but
-support custom pairs.
-
-\(fn &optional ARG)" t nil)
-
-(defvar show-smartparens-global-mode nil "\
-Non-nil if Show-Smartparens-Global mode is enabled.
-See the command `show-smartparens-global-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `show-smartparens-global-mode'.")
-
-(custom-autoload 'show-smartparens-global-mode "smartparens/smartparens" nil)
-
-(autoload 'show-smartparens-global-mode "smartparens/smartparens" "\
-Toggle Show-Smartparens mode in all buffers.
-With prefix ARG, enable Show-Smartparens-Global mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Show-Smartparens mode is enabled in all buffers where
-`turn-on-show-smartparens-mode' would do it.
-See `show-smartparens-mode' for more information on Show-Smartparens mode.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-show-smartparens-mode "smartparens/smartparens" "\
-Turn on `show-smartparens-mode'.
-
-\(fn)" t nil)
-
-(autoload 'turn-off-show-smartparens-mode "smartparens/smartparens" "\
-Turn off `show-smartparens-mode'.
-
-\(fn)" t nil)
+(add-to-list 'interpreter-mode-alist '("ocaml" . tuareg-mode))
 
 ;;;***
 
 ;;;### (autoloads nil "web-mode/web-mode" "web-mode/web-mode.el"
-;;;;;;  (22245 60624 600243 300000))
+;;;;;;  (22269 10992 0 0))
 ;;; Generated autoloads from web-mode/web-mode.el
 
 (autoload 'web-mode "web-mode/web-mode" "\
@@ -928,7 +831,7 @@ Major mode for editing web templates.
 ;;;***
 
 ;;;### (autoloads nil "yasnippet/yasnippet" "yasnippet/yasnippet.el"
-;;;;;;  (22245 60585 733575 195000))
+;;;;;;  (22269 10947 0 0))
 ;;; Generated autoloads from yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "yasnippet/yasnippet" "\
@@ -970,298 +873,6 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;***
 
-;;;### (autoloads nil "yatex/yatexenv" "yatex/yatexenv.el" (22245
-;;;;;;  60629 166910 137000))
-;;; Generated autoloads from yatex/yatexenv.el
-
-(autoload 'YaTeX-what-column "yatex/yatexenv" "\
-Show which kind of column the current position is belonging to.
-
-\(fn)" t nil)
-
-(autoload 'YaTeX-intelligent-newline "yatex/yatexenv" "\
-Insert newline and environment-specific entry.
-`\\item'	for some itemizing environment,
-`\\> \\> \\'	for tabbing environemnt,
-`& & \\ hline'	for tabular environment.
-
-\(fn ARG)" t nil)
-
-(autoload 'YaTeX-indent-line-equation "yatex/yatexenv" "\
-Indent a line in equation family.
-
-\(fn)" nil nil)
-
-(autoload 'YaTeX-goto-corresponding-leftright "yatex/yatexenv" "\
-Go to corresponding left or ight.
-
-\(fn)" nil nil)
-
-;;;***
-
-;;;### (autoloads nil "yatex/yatexhlp" "yatex/yatexhlp.el" (22245
-;;;;;;  60629 170243 470000))
-;;; Generated autoloads from yatex/yatexhlp.el
-
-(autoload 'YaTeX-apropos "yatex/yatexhlp" "\
-
-
-\(fn KEY)" t nil)
-
-(autoload 'YaTeX-help "yatex/yatexhlp" "\
-Show help buffer of LaTeX/TeX commands or macros.
-Optional argument MACRO, if supplied, is directly selected to keyword.
-
-\(fn &optional MACRO)" t nil)
-
-;;;***
-
-;;;### (autoloads nil "yatex/yatexlib" "yatex/yatexlib.el" (22245
-;;;;;;  60629 173576 803000))
-;;; Generated autoloads from yatex/yatexlib.el
-
-(autoload 'YaTeX-define-key "yatex/yatexlib" "\
-Define key on YaTeX-prefix-map.
-
-\(fn KEY BINDING &optional MAP)" nil nil)
-
-(autoload 'YaTeX-local-table-symbol "yatex/yatexlib" "\
-Return the lisp symbol which keeps local completion table of SYMBOL.
-
-\(fn SYMBOL)" nil nil)
-
-(autoload 'YaTeX-sync-local-table "yatex/yatexlib" "\
-Synchronize local variable SYMBOL.
-Copy its corresponding directory dependent completion table to SYMBOL.
-
-\(fn SYMBOL)" nil nil)
-
-(autoload 'YaTeX-read-user-completion-table "yatex/yatexlib" "\
-Append user completion table of LaTeX macros
-
-\(fn &optional FORCETOREAD)" t nil)
-
-(autoload 'YaTeX-reload-dictionary "yatex/yatexlib" "\
-Reload local dictionary.
-Use this function after editing ./.yatexrc.
-
-\(fn)" t nil)
-
-(autoload 'YaTeX-lookup-table "yatex/yatexlib" "\
-Lookup WORD in completion table whose type is TYPE.
-This function refers the symbol tmp-TYPE-table, user-TYPE-table, TYPE-table.
-Typically, TYPE is one of 'env, 'section, 'fontsize, 'singlecmd.
-
-\(fn WORD TYPE)" nil nil)
-
-(autoload 'YaTeX-update-table "yatex/yatexlib" "\
-Update completion table if the car of VALLIST is not in current tables.
-Second argument DEFAULT-TABLE is the quoted symbol of default completion
-table, third argument USER-TABLE is user table which will be saved in
-YaTeX-user-completion-table, fourth argument LOCAL-TABLE should have the
-completion which is valid during current Emacs's session.  If you
-want to make LOCAL-TABLE valid longer span (but restrict in this directory)
-create the file in current directory which has the same name with
-YaTeX-user-completion-table.
-
-\(fn VALLIST DEFAULT-TABLE USER-TABLE LOCAL-TABLE)" nil nil)
-
-(autoload 'YaTeX-cplread-with-learning "yatex/yatexlib" "\
-Completing read with learning.
-Do a completing read with prompt PROM.  Completion table is what
-DEFAULT-TABLE, USER-TABLE, LOCAL table are appended in reverse order.
-Note that these tables are passed by the symbol.
-Optional arguments PRED, REQMATH and INIT are passed to completing-read
-as its arguments PREDICATE, REQUIRE-MATCH and INITIAL-INPUT respectively.
-If optional 8th argument HSYM, history symbol, is passed, use it as
-history list variable.
-
-\(fn PROM DEFAULT-TABLE USER-TABLE LOCAL-TABLE &optional PRED REQMATCH INIT HSYM)" nil nil)
-
-(autoload 'YaTeX-update-dictionary "yatex/yatexlib" "\
-
-
-\(fn FILE SYMBOL &optional TYPE)" nil nil)
-
-(autoload 'YaTeX-define-begend-key-normal "yatex/yatexlib" "\
-Define short cut YaTeX-make-begin-end key.
-
-\(fn KEY ENV &optional MAP)" nil nil)
-
-(autoload 'YaTeX-define-begend-region-key "yatex/yatexlib" "\
-Define short cut YaTeX-make-begin-end-region key.
-
-\(fn KEY ENV &optional MAP)" nil nil)
-
-(autoload 'YaTeX-define-begend-key "yatex/yatexlib" "\
-Define short cut key for begin type completion.
-Define both strokes for normal and region mode.
-To customize YaTeX, user should use this function.
-
-\(fn KEY ENV &optional MAP)" nil nil)
-
-(autoload 'YaTeX-search-active-forward "yatex/yatexlib" "\
-Search STRING which is not commented out by CMNTRX.
-Optional arguments after BOUND, ERR, CNT are passed literally to search-forward
-or search-backward.
-Optional sixth argument FUNC changes search-function.
-
-\(fn STRING CMNTRX &optional BOUND ERR CNT FUNC)" nil nil)
-
-(autoload 'YaTeX-switch-to-buffer "yatex/yatexlib" "\
-Switch to buffer if buffer exists, find file if not.
-Optional second arg SETBUF t make use set-buffer instead of switch-to-buffer.
-
-\(fn FILE &optional SETBUF)" t nil)
-
-(autoload 'YaTeX-switch-to-buffer-other-window "yatex/yatexlib" "\
-Switch to buffer if buffer exists, find file if not.
-
-\(fn FILE)" t nil)
-
-(autoload 'YaTeX-replace-format "yatex/yatexlib" "\
-In STRING, replace first appearance of FORMAT to REPL as if
-function `format' does.  FORMAT does not contain `%'
-
-\(fn STRING FORMAT REPL)" nil nil)
-
-(autoload 'YaTeX-replace-formats "yatex/yatexlib" "\
-
-
-\(fn STRING REPLACE-LIST)" nil nil)
-
-(autoload 'YaTeX-replace-format-args "yatex/yatexlib" "\
-Translate the argument mark #1, #2, ... #n in the STRING into the
-corresponding real arguments ARGS.
-
-\(fn STRING &rest ARGS)" nil nil)
-
-(autoload 'rindex "yatex/yatexlib" "\
-Return the last position of STRING where character CHAR found.
-
-\(fn STRING CHAR)" nil nil)
-
-(autoload 'point-beginning-of-line "yatex/yatexlib" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'point-end-of-line "yatex/yatexlib" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'YaTeX-showup-buffer "yatex/yatexlib" "\
-Make BUFFER show up in certain window (but current window)
-that gives the maximum value by the FUNC.  FUNC should take an argument
-of its window object.  Non-nil for optional third argument SELECT selects
-that window.  This function never selects minibuffer window.
-
-\(fn BUFFER &optional FUNC SELECT)" nil nil)
-
-(autoload 'split-window-calculate-height "yatex/yatexlib" "\
-Split current window wight specified HEIGHT.
-If HEIGHT is number, make a new window that has HEIGHT lines.
-If HEIGHT is string, make a new window that occupies HEIGT % of screen height.
-Otherwise split window conventionally.
-
-\(fn HEIGHT)" nil nil)
-
-(autoload 'YaTeX-window-list "yatex/yatexlib" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'substitute-all-key-definition "yatex/yatexlib" "\
-Replace recursively OLDDEF with NEWDEF for any keys in KEYMAP now
-defined as OLDDEF. In other words, OLDDEF is replaced with NEWDEF
-where ever it appears.
-
-\(fn OLDDEF NEWDEF KEYMAP)" nil nil)
-
-(autoload 'YaTeX-match-string "yatex/yatexlib" "\
-Return (buffer-substring (match-beginning n) (match-beginning m)).
-
-\(fn N &optional M)" nil nil)
-
-(autoload 'YaTeX-minibuffer-complete "yatex/yatexlib" "\
-Complete in minibuffer.
-  If the symbol 'delim is bound and is string, its value is assumed to be
-the character class of delimiters.  Completion will be performed on
-the last field separated by those delimiters.
-  If the symbol 'quick is bound and is 't, when the try-completion results
-in t, exit minibuffer immediately.
-
-\(fn)" t nil)
-
-(autoload 'completing-read-with-history "yatex/yatexlib" "\
-Completing read with general history: gmhist, Emacs-19.
-
-\(fn PROMPT TABLE &optional PREDICATE MUST-MATCH INITIAL HSYM)" nil nil)
-
-(autoload 'read-from-minibuffer-with-history "yatex/yatexlib" "\
-Read from minibuffer with general history: gmhist, Emacs-19.
-
-\(fn PROMPT &optional INIT MAP READ HSYM)" nil nil)
-
-(autoload 'read-string-with-history "yatex/yatexlib" "\
-Read string with history: gmhist(Emacs-18) and Emacs-19.
-
-\(fn PROMPT &optional INIT HSYM)" nil nil)
-
-(fset 'YaTeX-rassoc (if (and nil (fboundp 'rassoc) (subrp (symbol-function 'rassoc))) (symbol-function 'rassoc) #'(lambda (key list) (let ((l list)) (catch 'found (while l (if (equal key (cdr (car l))) (throw 'found (car l))) (setq l (cdr l))))))))
-
-(autoload 'YaTeX-delete1 "yatex/yatexlib" "\
-Delete
-
-\(fn ELT LIST)" nil nil)
-
-(fset 'YaTeX-last-key (if (fboundp 'win:last-key) 'win:last-key #'(lambda nil (if (boundp 'last-command-char) last-command-char last-command-event))))
-
-(autoload 'YaTeX-command-to-string "yatex/yatexlib" "\
-
-
-\(fn CMD)" nil nil)
-
-(autoload 'YaTeX-reindent "yatex/yatexlib" "\
-Remove current indentation and reindento to COL column.
-
-\(fn COL)" nil nil)
-
-;;;***
-
-;;;### (autoloads nil "yatex/yatexmth" "yatex/yatexmth.el" (22245
-;;;;;;  60629 493576 815000))
-;;; Generated autoloads from yatex/yatexmth.el
-
-(autoload 'YaTeX-toggle-math-mode "yatex/yatexmth" "\
-
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'YaTeX-goto-corresponding-paren "yatex/yatexmth" "\
-Go to corresponding mathematical parentheses.
-
-\(fn)" nil nil)
-
-;;;***
-
-;;;### (autoloads nil "yatex/yatexsec" "yatex/yatexsec.el" (22245
-;;;;;;  60629 183576 804000))
-;;; Generated autoloads from yatex/yatexsec.el
-
-(autoload 'YaTeX-read-section-in-minibuffer "yatex/yatexsec" "\
-
-
-\(fn PROMPT TABLE &optional DEFAULT DELIM)" t nil)
-
-(autoload 'YaTeX-make-section-with-overview "yatex/yatexsec" "\
-Input sectining command with previous overview.
-
-\(fn)" t nil)
-
-;;;***
-
 ;;;### (autoloads nil nil ("auto-complete/auto-complete-pkg.el" "company-mode/company-capf.el"
 ;;;;;;  "company-mode/company-clang.el" "company-mode/company-cmake.el"
 ;;;;;;  "company-mode/company-eclim.el" "company-mode/company-template.el"
@@ -1292,17 +903,9 @@ Input sectining command with previous overview.
 ;;;;;;  "scala-mode2/scala-mode2-lib.el" "scala-mode2/scala-mode2-map.el"
 ;;;;;;  "scala-mode2/scala-mode2-paragraph.el" "scala-mode2/scala-mode2-pkg.el"
 ;;;;;;  "scala-mode2/scala-mode2-sbt.el" "scala-mode2/scala-mode2-syntax.el"
-;;;;;;  "smartparens/smartparens-config.el" "smartparens/smartparens-haskell.el"
-;;;;;;  "smartparens/smartparens-html.el" "smartparens/smartparens-latex.el"
-;;;;;;  "smartparens/smartparens-lua.el" "smartparens/smartparens-pkg.el"
-;;;;;;  "smartparens/smartparens-python.el" "smartparens/smartparens-racket.el"
-;;;;;;  "smartparens/smartparens-ruby.el" "smartparens/smartparens-rust.el"
-;;;;;;  "smartparens/smartparens-scala.el" "yasnippet/yasnippet-debug.el"
-;;;;;;  "yasnippet/yasnippet-tests.el" "yatex/comment.el" "yatex/yahtml.el"
-;;;;;;  "yatex/yatex.el" "yatex/yatex19.el" "yatex/yatex23.el" "yatex/yatexadd.el"
-;;;;;;  "yatex/yatexgen.el" "yatex/yatexhie.el" "yatex/yatexhks.el"
-;;;;;;  "yatex/yatexinf.el" "yatex/yatexm-o.el" "yatex/yatexpkg.el"
-;;;;;;  "yatex/yatexprc.el") (22245 60746 149338 148000))
+;;;;;;  "tuareg-mode/tuareg-light.el" "tuareg-mode/tuareg-site-file.el"
+;;;;;;  "tuareg-mode/tuareg_indent.el" "yasnippet/yasnippet-debug.el"
+;;;;;;  "yasnippet/yasnippet-tests.el") (22295 19752 534493 0))
 
 ;;;***
 

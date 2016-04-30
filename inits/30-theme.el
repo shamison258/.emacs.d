@@ -1,7 +1,7 @@
 ;; Theme load
 (if window-system
-    (progn
-      ;; molokai color theme
+   (progn
+     ;; molokai color theme
       (el-get-bundle molokai-theme
         :type git
         :url "https://github.com/hbin/molokai-theme.git")

@@ -49,9 +49,3 @@
                 ("\\.sty$" . yatex-mode)
                 ("\\.clo$" . yatex-mode)
                 ("\\.bbl$" . yatex-mode)) auto-mode-alist))
-
-;; smartparens
-(el-get-bundle smartparens)
-(require 'smartparens-config)
-(smartparens-global-mode t)
-

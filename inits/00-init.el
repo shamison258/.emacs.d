@@ -17,8 +17,8 @@
 (setq coding-system-for-write 'utf-8)
 ;; Font
 (set-face-attribute 'default nil
-		    :family "Ricty")
-(defconst FONT_SIZE 11)
+                    :family "Menlo"
+                    :height 140)
 ;; tab幅
 (setq default-tab-width 2)
 ;; タブの無効化
@@ -39,6 +39,8 @@
 (setq ring-bell-function 'ignore)
 ;; 対応括弧をハイライト
 (show-paren-mode t)
+;;対応括弧を補完
+(electric-pair-mode t)
 ;; C-hをBackspaceに
 (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
 
@@ -50,3 +52,9 @@
 (setq read-buffer-completion-ignore-case t)
 ;; ファイル名の問い合わせで大文字小文字の区別をしない
 (setq read-file-name-completion-ignore-case t)
+
+;; clipboardの共有設定
+(setq x-select-enable-clipboard t)
+
+;; C-c c で compile コマンドを呼び出す
+(define-key mode-specific-map "c" 'compile)
